@@ -6,7 +6,7 @@ pipeline {
                 SRV_PORT=4000
                 MONGO_URI="app_db_1:27017/db?authSource=admin"
                 MONGO_PORT=27017
-                MONGO_INITDB_ROOT_USERNAME = credentials('MONGO_INITDB_ROOT_USERNAME')
+                MONGO_INITDB_ROOT_USERNAME = "DoniaBR"
                 MONGO_INITDB_ROOT_PASSWORD = credentials('MONGO_INITDB_ROOT_PASSWORD_DEV')
                 NODE_ENV="development"
             }
@@ -40,7 +40,7 @@ pipeline {
                 SRV_PORT=4000
                 MONGO_URI="app_db_1:27017/db?authSource=admin"
                 MONGO_PORT=27017
-                MONGO_INITDB_ROOT_USERNAME = credentials('MONGO_INITDB_ROOT_USERNAME')
+                MONGO_INITDB_ROOT_USERNAME = "DoniaBR"
                 MONGO_INITDB_ROOT_PASSWORD = credentials('MONGO_INITDB_ROOT_PASSWORD_STAGING')
                 NODE_ENV="production"
             }
@@ -98,7 +98,7 @@ pipeline {
                 SRV_PORT=4000
                 MONGO_URI="prod_db:27017/db?authSource=admin"
                 MONGO_PORT=27017
-                MONGO_INITDB_ROOT_USERNAME = credentials('MONGO_INITDB_ROOT_USERNAME')
+                MONGO_INITDB_ROOT_USERNAME = "DoniaBR"
                 MONGO_INITDB_ROOT_PASSWORD = credentials('MONGO_INITDB_ROOT_PASSWORD_PROD')
                 NODE_ENV="production"
             }
