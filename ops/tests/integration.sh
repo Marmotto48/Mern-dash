@@ -4,7 +4,7 @@
 # - should output -
 # Hello Client! There is one record in the database for Pedro Tavares
 
-export STR=$(curl http://prod_client:8081/welcome)
+export STR=$(curl http://prod_client:8080/welcome)
 export SUB='Hello Client! There is one record in the database for Pedro Tavares'
 if [[ "$STR" != *"$SUB"* ]]; then
   echo 'Integration test failed!'
