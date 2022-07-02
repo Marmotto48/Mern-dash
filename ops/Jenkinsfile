@@ -103,7 +103,7 @@ pipeline {
                 NODE_ENV="production"
             }
             when {
-                branch 'master'
+                branch 'main'
             }
             steps {
                 dir("./app") {
@@ -116,7 +116,7 @@ pipeline {
         }
         stage('Smoke tests and roll-back if needed') {
             when {
-                branch 'master'
+                branch 'main'
             }
             steps {
                 sh "curl 'http://prod_client:8081'"
