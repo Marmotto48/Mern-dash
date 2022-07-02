@@ -119,7 +119,7 @@ pipeline {
                 branch 'master'
             }
             steps {
-                sh "curl 'http://prod_client:8080'"
+                sh "curl 'http://prod_client:8081'"
             }
             post {
                 failure {
